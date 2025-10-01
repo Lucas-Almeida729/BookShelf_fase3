@@ -28,8 +28,8 @@ export function BookCard({ book, onEdit, onDelete }: BookCardProps) {
                 src={book.cover}
                 alt={book.title}
                 fill
-                className="object-cover transition-transform duration-200 group-hover:scale-105"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-200 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             ) : (
               <div className="w-full h-full bg-gradient-to-br from-muted to-muted/50 flex items-center justify-center">

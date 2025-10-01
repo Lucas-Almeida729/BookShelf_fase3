@@ -17,7 +17,9 @@ const BookSchema = z.object({
   status: z.enum(["QUERO_LER", "LENDO", "LIDO", "PAUSADO", "ABANDONADO"]),
   synopsis: z.string().optional(),
   notes: z.string().optional(),
-  // Adicione outros campos se necessário (year, pages, etc.)
+  year: z.coerce.number().optional(),
+  pages: z.coerce.number().optional(),
+  rating: z.coerce.number().optional(),
 });
 
 // Ação para CRIAR um livro

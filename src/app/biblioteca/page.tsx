@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import BookCard from '@/components/BookCard'; // Vamos garantir que esse componente esteja atualizado
+import { BookCard } from '@/components/BookCard'; // Vamos garantir que esse componente esteja atualizado
 import { getBooks } from '@/lib/database'; // Importando nossa função do banco de dados!
 
 // Note a palavra "async" aqui. Isso transforma a página em um Componente de Servidor
